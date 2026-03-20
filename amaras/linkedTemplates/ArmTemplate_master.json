@@ -1,0 +1,894 @@
+{
+	"$schema": "http://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#",
+	"contentVersion": "1.0.0.0",
+	"parameters": {
+		"factoryName": {
+			"type": "string",
+			"metadata": "Data Factory name",
+			"defaultValue": "amaras"
+		},
+		"AzureDataLakeStorage1_accountKey": {
+			"type": "secureString",
+			"metadata": "Secure string for 'accountKey' of 'AzureDataLakeStorage1'"
+		},
+		"AzureDataLakeStorage10_accountKey": {
+			"type": "secureString",
+			"metadata": "Secure string for 'accountKey' of 'AzureDataLakeStorage10'"
+		},
+		"AzureDataLakeStorage11_accountKey": {
+			"type": "secureString",
+			"metadata": "Secure string for 'accountKey' of 'AzureDataLakeStorage11'"
+		},
+		"AzureDataLakeStorage12_accountKey": {
+			"type": "secureString",
+			"metadata": "Secure string for 'accountKey' of 'AzureDataLakeStorage12'"
+		},
+		"AzureDataLakeStorage13_accountKey": {
+			"type": "secureString",
+			"metadata": "Secure string for 'accountKey' of 'AzureDataLakeStorage13'"
+		},
+		"AzureDataLakeStorage14_accountKey": {
+			"type": "secureString",
+			"metadata": "Secure string for 'accountKey' of 'AzureDataLakeStorage14'"
+		},
+		"AzureDataLakeStorage15_accountKey": {
+			"type": "secureString",
+			"metadata": "Secure string for 'accountKey' of 'AzureDataLakeStorage15'"
+		},
+		"AzureDataLakeStorage16_accountKey": {
+			"type": "secureString",
+			"metadata": "Secure string for 'accountKey' of 'AzureDataLakeStorage16'"
+		},
+		"AzureDataLakeStorage17_accountKey": {
+			"type": "secureString",
+			"metadata": "Secure string for 'accountKey' of 'AzureDataLakeStorage17'"
+		},
+		"AzureDataLakeStorage18_accountKey": {
+			"type": "secureString",
+			"metadata": "Secure string for 'accountKey' of 'AzureDataLakeStorage18'"
+		},
+		"AzureDataLakeStorage2_accountKey": {
+			"type": "secureString",
+			"metadata": "Secure string for 'accountKey' of 'AzureDataLakeStorage2'"
+		},
+		"AzureDataLakeStorage3_accountKey": {
+			"type": "secureString",
+			"metadata": "Secure string for 'accountKey' of 'AzureDataLakeStorage3'"
+		},
+		"AzureDataLakeStorage35_accountKey": {
+			"type": "secureString",
+			"metadata": "Secure string for 'accountKey' of 'AzureDataLakeStorage35'"
+		},
+		"AzureDataLakeStorage36_accountKey": {
+			"type": "secureString",
+			"metadata": "Secure string for 'accountKey' of 'AzureDataLakeStorage36'"
+		},
+		"AzureDataLakeStorage37_accountKey": {
+			"type": "secureString",
+			"metadata": "Secure string for 'accountKey' of 'AzureDataLakeStorage37'"
+		},
+		"AzureDataLakeStorage38_accountKey": {
+			"type": "secureString",
+			"metadata": "Secure string for 'accountKey' of 'AzureDataLakeStorage38'"
+		},
+		"AzureDataLakeStorage39_accountKey": {
+			"type": "secureString",
+			"metadata": "Secure string for 'accountKey' of 'AzureDataLakeStorage39'"
+		},
+		"AzureDataLakeStorage4_accountKey": {
+			"type": "secureString",
+			"metadata": "Secure string for 'accountKey' of 'AzureDataLakeStorage4'"
+		},
+		"AzureDataLakeStorage40_accountKey": {
+			"type": "secureString",
+			"metadata": "Secure string for 'accountKey' of 'AzureDataLakeStorage40'"
+		},
+		"AzureDataLakeStorage46_accountKey": {
+			"type": "secureString",
+			"metadata": "Secure string for 'accountKey' of 'AzureDataLakeStorage46'"
+		},
+		"AzureDataLakeStorage47_accountKey": {
+			"type": "secureString",
+			"metadata": "Secure string for 'accountKey' of 'AzureDataLakeStorage47'"
+		},
+		"AzureDataLakeStorage48_accountKey": {
+			"type": "secureString",
+			"metadata": "Secure string for 'accountKey' of 'AzureDataLakeStorage48'"
+		},
+		"AzureDataLakeStorage49_accountKey": {
+			"type": "secureString",
+			"metadata": "Secure string for 'accountKey' of 'AzureDataLakeStorage49'"
+		},
+		"AzureDataLakeStorage5_accountKey": {
+			"type": "secureString",
+			"metadata": "Secure string for 'accountKey' of 'AzureDataLakeStorage5'"
+		},
+		"AzureDataLakeStorage50_accountKey": {
+			"type": "secureString",
+			"metadata": "Secure string for 'accountKey' of 'AzureDataLakeStorage50'"
+		},
+		"AzureDataLakeStorage51_accountKey": {
+			"type": "secureString",
+			"metadata": "Secure string for 'accountKey' of 'AzureDataLakeStorage51'"
+		},
+		"AzureDataLakeStorage52_accountKey": {
+			"type": "secureString",
+			"metadata": "Secure string for 'accountKey' of 'AzureDataLakeStorage52'"
+		},
+		"AzureDataLakeStorage53_accountKey": {
+			"type": "secureString",
+			"metadata": "Secure string for 'accountKey' of 'AzureDataLakeStorage53'"
+		},
+		"AzureDataLakeStorage54_accountKey": {
+			"type": "secureString",
+			"metadata": "Secure string for 'accountKey' of 'AzureDataLakeStorage54'"
+		},
+		"AzureDataLakeStorage55_accountKey": {
+			"type": "secureString",
+			"metadata": "Secure string for 'accountKey' of 'AzureDataLakeStorage55'"
+		},
+		"AzureDataLakeStorage6_accountKey": {
+			"type": "secureString",
+			"metadata": "Secure string for 'accountKey' of 'AzureDataLakeStorage6'"
+		},
+		"AzureDataLakeStorage7_accountKey": {
+			"type": "secureString",
+			"metadata": "Secure string for 'accountKey' of 'AzureDataLakeStorage7'"
+		},
+		"AzureDataLakeStorage8_accountKey": {
+			"type": "secureString",
+			"metadata": "Secure string for 'accountKey' of 'AzureDataLakeStorage8'"
+		},
+		"AzureDataLakeStorage9_accountKey": {
+			"type": "secureString",
+			"metadata": "Secure string for 'accountKey' of 'AzureDataLakeStorage9'"
+		},
+		"AzureDatabricks1_accessToken": {
+			"type": "secureString",
+			"metadata": "Secure string for 'accessToken' of 'AzureDatabricks1'"
+		},
+		"AzureDatabricks2_accessToken": {
+			"type": "secureString",
+			"metadata": "Secure string for 'accessToken' of 'AzureDatabricks2'"
+		},
+		"AzureSqlDatabase1_password": {
+			"type": "secureString",
+			"metadata": "Secure string for 'password' of 'AzureSqlDatabase1'"
+		},
+		"AzureSqlDatabase2_password": {
+			"type": "secureString",
+			"metadata": "Secure string for 'password' of 'AzureSqlDatabase2'"
+		},
+		"AzureSqlDatabase3_password": {
+			"type": "secureString",
+			"metadata": "Secure string for 'password' of 'AzureSqlDatabase3'"
+		},
+		"AzureSqlDatabase4_password": {
+			"type": "secureString",
+			"metadata": "Secure string for 'password' of 'AzureSqlDatabase4'"
+		},
+		"AzureSqlDatabase5_password": {
+			"type": "secureString",
+			"metadata": "Secure string for 'password' of 'AzureSqlDatabase5'"
+		},
+		"AzureSqlDatabase6_password": {
+			"type": "secureString",
+			"metadata": "Secure string for 'password' of 'AzureSqlDatabase6'"
+		},
+		"AzureSqlDatabase7_password": {
+			"type": "secureString",
+			"metadata": "Secure string for 'password' of 'AzureSqlDatabase7'"
+		},
+		"AzureSqlDatabase8_password": {
+			"type": "secureString",
+			"metadata": "Secure string for 'password' of 'AzureSqlDatabase8'"
+		},
+		"AzureSqlDatabase9_password": {
+			"type": "secureString",
+			"metadata": "Secure string for 'password' of 'AzureSqlDatabase9'"
+		},
+		"databricks_notebook_connection_accessToken": {
+			"type": "secureString",
+			"metadata": "Secure string for 'accessToken' of 'databricks_notebook_connection'"
+		},
+		"notebbok connection2_accessToken": {
+			"type": "secureString",
+			"metadata": "Secure string for 'accessToken' of 'notebbok connection2'"
+		},
+		"notebook_connection1_accessToken": {
+			"type": "secureString",
+			"metadata": "Secure string for 'accessToken' of 'notebook_connection1'"
+		},
+		"notebook_connection2_accessToken": {
+			"type": "secureString",
+			"metadata": "Secure string for 'accessToken' of 'notebook_connection2'"
+		},
+		"AzureDataLakeStorage1_properties_typeProperties_url": {
+			"type": "string",
+			"defaultValue": "https://amaras12326.dfs.core.windows.net/"
+		},
+		"AzureDataLakeStorage10_properties_typeProperties_url": {
+			"type": "string",
+			"defaultValue": "https://amaras12326.dfs.core.windows.net/"
+		},
+		"AzureDataLakeStorage11_properties_typeProperties_url": {
+			"type": "string",
+			"defaultValue": "https://amaras12326.dfs.core.windows.net/"
+		},
+		"AzureDataLakeStorage12_properties_typeProperties_url": {
+			"type": "string",
+			"defaultValue": "https://amaras12326.dfs.core.windows.net/"
+		},
+		"AzureDataLakeStorage13_properties_typeProperties_url": {
+			"type": "string",
+			"defaultValue": "https://amaras12326.dfs.core.windows.net/"
+		},
+		"AzureDataLakeStorage14_properties_typeProperties_url": {
+			"type": "string",
+			"defaultValue": "https://amaras12326.dfs.core.windows.net/"
+		},
+		"AzureDataLakeStorage15_properties_typeProperties_url": {
+			"type": "string",
+			"defaultValue": "https://unnamus1225.dfs.core.windows.net/"
+		},
+		"AzureDataLakeStorage16_properties_typeProperties_url": {
+			"type": "string",
+			"defaultValue": "https://amaras12326.dfs.core.windows.net/"
+		},
+		"AzureDataLakeStorage17_properties_typeProperties_url": {
+			"type": "string",
+			"defaultValue": "https://amaras12326.dfs.core.windows.net/"
+		},
+		"AzureDataLakeStorage18_properties_typeProperties_url": {
+			"type": "string",
+			"defaultValue": "https://amaras12326.dfs.core.windows.net/"
+		},
+		"AzureDataLakeStorage2_properties_typeProperties_url": {
+			"type": "string",
+			"defaultValue": "https://amaras12326.dfs.core.windows.net/"
+		},
+		"AzureDataLakeStorage3_properties_typeProperties_url": {
+			"type": "string",
+			"defaultValue": "https://amaras12326.dfs.core.windows.net/"
+		},
+		"AzureDataLakeStorage35_properties_typeProperties_url": {
+			"type": "string",
+			"defaultValue": "https://amaras12326.dfs.core.windows.net/"
+		},
+		"AzureDataLakeStorage36_properties_typeProperties_url": {
+			"type": "string",
+			"defaultValue": "https://amaras12326.dfs.core.windows.net/"
+		},
+		"AzureDataLakeStorage37_properties_typeProperties_url": {
+			"type": "string",
+			"defaultValue": "https://amaras12326.dfs.core.windows.net/"
+		},
+		"AzureDataLakeStorage38_properties_typeProperties_url": {
+			"type": "string",
+			"defaultValue": "https://amaras12326.dfs.core.windows.net/"
+		},
+		"AzureDataLakeStorage39_properties_typeProperties_url": {
+			"type": "string",
+			"defaultValue": "https://amaras12326.dfs.core.windows.net/"
+		},
+		"AzureDataLakeStorage4_properties_typeProperties_url": {
+			"type": "string",
+			"defaultValue": "https://amaras12326.dfs.core.windows.net/"
+		},
+		"AzureDataLakeStorage40_properties_typeProperties_url": {
+			"type": "string",
+			"defaultValue": "https://amaras12326.dfs.core.windows.net/"
+		},
+		"AzureDataLakeStorage46_properties_typeProperties_url": {
+			"type": "string",
+			"defaultValue": "https://amaras12326.dfs.core.windows.net/"
+		},
+		"AzureDataLakeStorage47_properties_typeProperties_url": {
+			"type": "string",
+			"defaultValue": "https://amaras12326.dfs.core.windows.net/"
+		},
+		"AzureDataLakeStorage48_properties_typeProperties_url": {
+			"type": "string",
+			"defaultValue": "https://amaras12326.dfs.core.windows.net/"
+		},
+		"AzureDataLakeStorage49_properties_typeProperties_url": {
+			"type": "string",
+			"defaultValue": "https://amaras12326.dfs.core.windows.net/"
+		},
+		"AzureDataLakeStorage5_properties_typeProperties_url": {
+			"type": "string",
+			"defaultValue": "https://amaras12326.dfs.core.windows.net/"
+		},
+		"AzureDataLakeStorage50_properties_typeProperties_url": {
+			"type": "string",
+			"defaultValue": "https://amaras12326.dfs.core.windows.net/"
+		},
+		"AzureDataLakeStorage51_properties_typeProperties_url": {
+			"type": "string",
+			"defaultValue": "https://amaras12326.dfs.core.windows.net/"
+		},
+		"AzureDataLakeStorage52_properties_typeProperties_url": {
+			"type": "string",
+			"defaultValue": "https://amaras12326.dfs.core.windows.net/"
+		},
+		"AzureDataLakeStorage53_properties_typeProperties_url": {
+			"type": "string",
+			"defaultValue": "https://amaras12326.dfs.core.windows.net/"
+		},
+		"AzureDataLakeStorage54_properties_typeProperties_url": {
+			"type": "string",
+			"defaultValue": "https://amaras12326.dfs.core.windows.net/"
+		},
+		"AzureDataLakeStorage55_properties_typeProperties_url": {
+			"type": "string",
+			"defaultValue": "https://amaras12326.dfs.core.windows.net/"
+		},
+		"AzureDataLakeStorage6_properties_typeProperties_url": {
+			"type": "string",
+			"defaultValue": "https://amaras12326.dfs.core.windows.net/"
+		},
+		"AzureDataLakeStorage7_properties_typeProperties_url": {
+			"type": "string",
+			"defaultValue": "https://amaras12326.dfs.core.windows.net/"
+		},
+		"AzureDataLakeStorage8_properties_typeProperties_url": {
+			"type": "string",
+			"defaultValue": "https://amaras12326.dfs.core.windows.net/"
+		},
+		"AzureDataLakeStorage9_properties_typeProperties_url": {
+			"type": "string",
+			"defaultValue": "https://amaras12326.dfs.core.windows.net/"
+		},
+		"AzureDatabricks1_properties_typeProperties_existingClusterId": {
+			"type": "string",
+			"defaultValue": "0318-112719-ml9o4iw2"
+		},
+		"AzureDatabricks2_properties_typeProperties_existingClusterId": {
+			"type": "string",
+			"defaultValue": "0318-040011-31ckt4f6"
+		},
+		"AzureSqlDatabase1_properties_typeProperties_server": {
+			"type": "string",
+			"defaultValue": "demobrowsejobs1234.database.windows.net"
+		},
+		"AzureSqlDatabase1_properties_typeProperties_database": {
+			"type": "string",
+			"defaultValue": "master"
+		},
+		"AzureSqlDatabase1_properties_typeProperties_userName": {
+			"type": "string",
+			"defaultValue": "admin19126"
+		},
+		"AzureSqlDatabase2_properties_typeProperties_server": {
+			"type": "string",
+			"defaultValue": "demobrowsejobs1234.database.windows.net"
+		},
+		"AzureSqlDatabase2_properties_typeProperties_database": {
+			"type": "string",
+			"defaultValue": "sunilrohitj234"
+		},
+		"AzureSqlDatabase2_properties_typeProperties_userName": {
+			"type": "string",
+			"defaultValue": "admin19126"
+		},
+		"AzureSqlDatabase3_properties_typeProperties_server": {
+			"type": "string",
+			"defaultValue": "demobrowsejobs1234.database.windows.net"
+		},
+		"AzureSqlDatabase3_properties_typeProperties_database": {
+			"type": "string",
+			"defaultValue": "sunilrohitj234"
+		},
+		"AzureSqlDatabase3_properties_typeProperties_userName": {
+			"type": "string",
+			"defaultValue": "admin19126"
+		},
+		"AzureSqlDatabase4_properties_typeProperties_server": {
+			"type": "string",
+			"defaultValue": "demobrowsejobs1234.database.windows.net"
+		},
+		"AzureSqlDatabase4_properties_typeProperties_database": {
+			"type": "string",
+			"defaultValue": "sunilrohitj234"
+		},
+		"AzureSqlDatabase4_properties_typeProperties_userName": {
+			"type": "string",
+			"defaultValue": "admin19126"
+		},
+		"AzureSqlDatabase5_properties_typeProperties_server": {
+			"type": "string",
+			"defaultValue": "demobrowsejobs1234.database.windows.net"
+		},
+		"AzureSqlDatabase5_properties_typeProperties_database": {
+			"type": "string",
+			"defaultValue": "sunilrohitj234"
+		},
+		"AzureSqlDatabase5_properties_typeProperties_userName": {
+			"type": "string",
+			"defaultValue": "admin19126"
+		},
+		"AzureSqlDatabase6_properties_typeProperties_server": {
+			"type": "string",
+			"defaultValue": "demobrowsejobs1234.database.windows.net"
+		},
+		"AzureSqlDatabase6_properties_typeProperties_database": {
+			"type": "string",
+			"defaultValue": "sunilrohitj234"
+		},
+		"AzureSqlDatabase6_properties_typeProperties_userName": {
+			"type": "string",
+			"defaultValue": "admin19126"
+		},
+		"AzureSqlDatabase7_properties_typeProperties_server": {
+			"type": "string",
+			"defaultValue": "demobrowsejobs1234.database.windows.net"
+		},
+		"AzureSqlDatabase7_properties_typeProperties_database": {
+			"type": "string",
+			"defaultValue": "sunilrohitj234"
+		},
+		"AzureSqlDatabase7_properties_typeProperties_userName": {
+			"type": "string",
+			"defaultValue": "admin19126"
+		},
+		"AzureSqlDatabase8_properties_typeProperties_server": {
+			"type": "string",
+			"defaultValue": "demobrowsejobs1234.database.windows.net"
+		},
+		"AzureSqlDatabase8_properties_typeProperties_database": {
+			"type": "string",
+			"defaultValue": "sunilrohitj234"
+		},
+		"AzureSqlDatabase8_properties_typeProperties_userName": {
+			"type": "string",
+			"defaultValue": "admin19126"
+		},
+		"AzureSqlDatabase9_properties_typeProperties_server": {
+			"type": "string",
+			"defaultValue": "demobrowsejobs1234.database.windows.net"
+		},
+		"AzureSqlDatabase9_properties_typeProperties_database": {
+			"type": "string",
+			"defaultValue": "sunilrohitj234"
+		},
+		"AzureSqlDatabase9_properties_typeProperties_userName": {
+			"type": "string",
+			"defaultValue": "admin19126"
+		},
+		"databricks_notebook_connection_properties_typeProperties_existingClusterId": {
+			"type": "string",
+			"defaultValue": "0318-141855-f1z3ilrm"
+		},
+		"notebbok connection2_properties_typeProperties_existingClusterId": {
+			"type": "string",
+			"defaultValue": "0318-112719-ml9o4iw2"
+		},
+		"notebook_connection1_properties_typeProperties_existingClusterId": {
+			"type": "string",
+			"defaultValue": "0318-104038-4cp6l9sy"
+		},
+		"notebook_connection2_properties_typeProperties_existingClusterId": {
+			"type": "string",
+			"defaultValue": "0319-025304-spjs8p0i"
+		},
+		"containerUri": {
+			"type": "string",
+			"metadata": "URI to storage account containing linked ARM templates"
+		},
+		"containerSasToken": {
+			"type": "string",
+			"metadata": "Sas token to storage account containing linked ARM templates"
+		}
+	},
+	"variables": {
+		"factoryId": "[concat('Microsoft.DataFactory/factories/', parameters('factoryName'))]"
+	},
+	"resources": [
+		{
+			"name": "amaras_ArmTemplate_0",
+			"type": "Microsoft.Resources/deployments",
+			"apiVersion": "2024-03-01",
+			"properties": {
+				"mode": "incremental",
+				"templateLink": {
+					"uri": "[concat(parameters('containerUri'), '/ArmTemplate_0.json', parameters('containerSasToken'))]",
+					"contentVersion": "1.0.0.0"
+				},
+				"parameters": {
+					"factoryName": {
+						"value": "[parameters('factoryName')]"
+					},
+					"AzureDataLakeStorage1_accountKey": {
+						"value": "[parameters('AzureDataLakeStorage1_accountKey')]"
+					},
+					"AzureDataLakeStorage10_accountKey": {
+						"value": "[parameters('AzureDataLakeStorage10_accountKey')]"
+					},
+					"AzureDataLakeStorage11_accountKey": {
+						"value": "[parameters('AzureDataLakeStorage11_accountKey')]"
+					},
+					"AzureDataLakeStorage12_accountKey": {
+						"value": "[parameters('AzureDataLakeStorage12_accountKey')]"
+					},
+					"AzureDataLakeStorage13_accountKey": {
+						"value": "[parameters('AzureDataLakeStorage13_accountKey')]"
+					},
+					"AzureDataLakeStorage14_accountKey": {
+						"value": "[parameters('AzureDataLakeStorage14_accountKey')]"
+					},
+					"AzureDataLakeStorage15_accountKey": {
+						"value": "[parameters('AzureDataLakeStorage15_accountKey')]"
+					},
+					"AzureDataLakeStorage16_accountKey": {
+						"value": "[parameters('AzureDataLakeStorage16_accountKey')]"
+					},
+					"AzureDataLakeStorage17_accountKey": {
+						"value": "[parameters('AzureDataLakeStorage17_accountKey')]"
+					},
+					"AzureDataLakeStorage18_accountKey": {
+						"value": "[parameters('AzureDataLakeStorage18_accountKey')]"
+					},
+					"AzureDataLakeStorage2_accountKey": {
+						"value": "[parameters('AzureDataLakeStorage2_accountKey')]"
+					},
+					"AzureDataLakeStorage3_accountKey": {
+						"value": "[parameters('AzureDataLakeStorage3_accountKey')]"
+					},
+					"AzureDataLakeStorage35_accountKey": {
+						"value": "[parameters('AzureDataLakeStorage35_accountKey')]"
+					},
+					"AzureDataLakeStorage36_accountKey": {
+						"value": "[parameters('AzureDataLakeStorage36_accountKey')]"
+					},
+					"AzureDataLakeStorage37_accountKey": {
+						"value": "[parameters('AzureDataLakeStorage37_accountKey')]"
+					},
+					"AzureDataLakeStorage38_accountKey": {
+						"value": "[parameters('AzureDataLakeStorage38_accountKey')]"
+					},
+					"AzureDataLakeStorage39_accountKey": {
+						"value": "[parameters('AzureDataLakeStorage39_accountKey')]"
+					},
+					"AzureDataLakeStorage4_accountKey": {
+						"value": "[parameters('AzureDataLakeStorage4_accountKey')]"
+					},
+					"AzureDataLakeStorage40_accountKey": {
+						"value": "[parameters('AzureDataLakeStorage40_accountKey')]"
+					},
+					"AzureDataLakeStorage46_accountKey": {
+						"value": "[parameters('AzureDataLakeStorage46_accountKey')]"
+					},
+					"AzureDataLakeStorage1_properties_typeProperties_url": {
+						"value": "[parameters('AzureDataLakeStorage1_properties_typeProperties_url')]"
+					},
+					"AzureDataLakeStorage10_properties_typeProperties_url": {
+						"value": "[parameters('AzureDataLakeStorage10_properties_typeProperties_url')]"
+					},
+					"AzureDataLakeStorage11_properties_typeProperties_url": {
+						"value": "[parameters('AzureDataLakeStorage11_properties_typeProperties_url')]"
+					},
+					"AzureDataLakeStorage12_properties_typeProperties_url": {
+						"value": "[parameters('AzureDataLakeStorage12_properties_typeProperties_url')]"
+					},
+					"AzureDataLakeStorage13_properties_typeProperties_url": {
+						"value": "[parameters('AzureDataLakeStorage13_properties_typeProperties_url')]"
+					},
+					"AzureDataLakeStorage14_properties_typeProperties_url": {
+						"value": "[parameters('AzureDataLakeStorage14_properties_typeProperties_url')]"
+					},
+					"AzureDataLakeStorage15_properties_typeProperties_url": {
+						"value": "[parameters('AzureDataLakeStorage15_properties_typeProperties_url')]"
+					},
+					"AzureDataLakeStorage16_properties_typeProperties_url": {
+						"value": "[parameters('AzureDataLakeStorage16_properties_typeProperties_url')]"
+					},
+					"AzureDataLakeStorage17_properties_typeProperties_url": {
+						"value": "[parameters('AzureDataLakeStorage17_properties_typeProperties_url')]"
+					},
+					"AzureDataLakeStorage18_properties_typeProperties_url": {
+						"value": "[parameters('AzureDataLakeStorage18_properties_typeProperties_url')]"
+					},
+					"AzureDataLakeStorage2_properties_typeProperties_url": {
+						"value": "[parameters('AzureDataLakeStorage2_properties_typeProperties_url')]"
+					},
+					"AzureDataLakeStorage3_properties_typeProperties_url": {
+						"value": "[parameters('AzureDataLakeStorage3_properties_typeProperties_url')]"
+					},
+					"AzureDataLakeStorage35_properties_typeProperties_url": {
+						"value": "[parameters('AzureDataLakeStorage35_properties_typeProperties_url')]"
+					},
+					"AzureDataLakeStorage36_properties_typeProperties_url": {
+						"value": "[parameters('AzureDataLakeStorage36_properties_typeProperties_url')]"
+					},
+					"AzureDataLakeStorage37_properties_typeProperties_url": {
+						"value": "[parameters('AzureDataLakeStorage37_properties_typeProperties_url')]"
+					},
+					"AzureDataLakeStorage38_properties_typeProperties_url": {
+						"value": "[parameters('AzureDataLakeStorage38_properties_typeProperties_url')]"
+					},
+					"AzureDataLakeStorage39_properties_typeProperties_url": {
+						"value": "[parameters('AzureDataLakeStorage39_properties_typeProperties_url')]"
+					},
+					"AzureDataLakeStorage4_properties_typeProperties_url": {
+						"value": "[parameters('AzureDataLakeStorage4_properties_typeProperties_url')]"
+					},
+					"AzureDataLakeStorage40_properties_typeProperties_url": {
+						"value": "[parameters('AzureDataLakeStorage40_properties_typeProperties_url')]"
+					},
+					"AzureDataLakeStorage46_properties_typeProperties_url": {
+						"value": "[parameters('AzureDataLakeStorage46_properties_typeProperties_url')]"
+					}
+				}
+			},
+			"dependsOn": []
+		},
+		{
+			"name": "amaras_ArmTemplate_1",
+			"type": "Microsoft.Resources/deployments",
+			"apiVersion": "2024-03-01",
+			"properties": {
+				"mode": "incremental",
+				"templateLink": {
+					"uri": "[concat(parameters('containerUri'), '/ArmTemplate_1.json', parameters('containerSasToken'))]",
+					"contentVersion": "1.0.0.0"
+				},
+				"parameters": {
+					"factoryName": {
+						"value": "[parameters('factoryName')]"
+					},
+					"AzureDataLakeStorage47_accountKey": {
+						"value": "[parameters('AzureDataLakeStorage47_accountKey')]"
+					},
+					"AzureDataLakeStorage48_accountKey": {
+						"value": "[parameters('AzureDataLakeStorage48_accountKey')]"
+					},
+					"AzureDataLakeStorage49_accountKey": {
+						"value": "[parameters('AzureDataLakeStorage49_accountKey')]"
+					},
+					"AzureDataLakeStorage5_accountKey": {
+						"value": "[parameters('AzureDataLakeStorage5_accountKey')]"
+					},
+					"AzureDataLakeStorage50_accountKey": {
+						"value": "[parameters('AzureDataLakeStorage50_accountKey')]"
+					},
+					"AzureDataLakeStorage51_accountKey": {
+						"value": "[parameters('AzureDataLakeStorage51_accountKey')]"
+					},
+					"AzureDataLakeStorage52_accountKey": {
+						"value": "[parameters('AzureDataLakeStorage52_accountKey')]"
+					},
+					"AzureDataLakeStorage53_accountKey": {
+						"value": "[parameters('AzureDataLakeStorage53_accountKey')]"
+					},
+					"AzureDataLakeStorage54_accountKey": {
+						"value": "[parameters('AzureDataLakeStorage54_accountKey')]"
+					},
+					"AzureDataLakeStorage55_accountKey": {
+						"value": "[parameters('AzureDataLakeStorage55_accountKey')]"
+					},
+					"AzureDataLakeStorage6_accountKey": {
+						"value": "[parameters('AzureDataLakeStorage6_accountKey')]"
+					},
+					"AzureDataLakeStorage7_accountKey": {
+						"value": "[parameters('AzureDataLakeStorage7_accountKey')]"
+					},
+					"AzureDataLakeStorage8_accountKey": {
+						"value": "[parameters('AzureDataLakeStorage8_accountKey')]"
+					},
+					"AzureDataLakeStorage9_accountKey": {
+						"value": "[parameters('AzureDataLakeStorage9_accountKey')]"
+					},
+					"AzureDatabricks1_accessToken": {
+						"value": "[parameters('AzureDatabricks1_accessToken')]"
+					},
+					"AzureDatabricks2_accessToken": {
+						"value": "[parameters('AzureDatabricks2_accessToken')]"
+					},
+					"AzureSqlDatabase1_password": {
+						"value": "[parameters('AzureSqlDatabase1_password')]"
+					},
+					"AzureSqlDatabase2_password": {
+						"value": "[parameters('AzureSqlDatabase2_password')]"
+					},
+					"AzureSqlDatabase3_password": {
+						"value": "[parameters('AzureSqlDatabase3_password')]"
+					},
+					"AzureSqlDatabase4_password": {
+						"value": "[parameters('AzureSqlDatabase4_password')]"
+					},
+					"AzureDataLakeStorage47_properties_typeProperties_url": {
+						"value": "[parameters('AzureDataLakeStorage47_properties_typeProperties_url')]"
+					},
+					"AzureDataLakeStorage48_properties_typeProperties_url": {
+						"value": "[parameters('AzureDataLakeStorage48_properties_typeProperties_url')]"
+					},
+					"AzureDataLakeStorage49_properties_typeProperties_url": {
+						"value": "[parameters('AzureDataLakeStorage49_properties_typeProperties_url')]"
+					},
+					"AzureDataLakeStorage5_properties_typeProperties_url": {
+						"value": "[parameters('AzureDataLakeStorage5_properties_typeProperties_url')]"
+					},
+					"AzureDataLakeStorage50_properties_typeProperties_url": {
+						"value": "[parameters('AzureDataLakeStorage50_properties_typeProperties_url')]"
+					},
+					"AzureDataLakeStorage51_properties_typeProperties_url": {
+						"value": "[parameters('AzureDataLakeStorage51_properties_typeProperties_url')]"
+					},
+					"AzureDataLakeStorage52_properties_typeProperties_url": {
+						"value": "[parameters('AzureDataLakeStorage52_properties_typeProperties_url')]"
+					},
+					"AzureDataLakeStorage53_properties_typeProperties_url": {
+						"value": "[parameters('AzureDataLakeStorage53_properties_typeProperties_url')]"
+					},
+					"AzureDataLakeStorage54_properties_typeProperties_url": {
+						"value": "[parameters('AzureDataLakeStorage54_properties_typeProperties_url')]"
+					},
+					"AzureDataLakeStorage55_properties_typeProperties_url": {
+						"value": "[parameters('AzureDataLakeStorage55_properties_typeProperties_url')]"
+					},
+					"AzureDataLakeStorage6_properties_typeProperties_url": {
+						"value": "[parameters('AzureDataLakeStorage6_properties_typeProperties_url')]"
+					},
+					"AzureDataLakeStorage7_properties_typeProperties_url": {
+						"value": "[parameters('AzureDataLakeStorage7_properties_typeProperties_url')]"
+					},
+					"AzureDataLakeStorage8_properties_typeProperties_url": {
+						"value": "[parameters('AzureDataLakeStorage8_properties_typeProperties_url')]"
+					},
+					"AzureDataLakeStorage9_properties_typeProperties_url": {
+						"value": "[parameters('AzureDataLakeStorage9_properties_typeProperties_url')]"
+					},
+					"AzureDatabricks1_properties_typeProperties_existingClusterId": {
+						"value": "[parameters('AzureDatabricks1_properties_typeProperties_existingClusterId')]"
+					},
+					"AzureDatabricks2_properties_typeProperties_existingClusterId": {
+						"value": "[parameters('AzureDatabricks2_properties_typeProperties_existingClusterId')]"
+					},
+					"AzureSqlDatabase1_properties_typeProperties_server": {
+						"value": "[parameters('AzureSqlDatabase1_properties_typeProperties_server')]"
+					},
+					"AzureSqlDatabase1_properties_typeProperties_database": {
+						"value": "[parameters('AzureSqlDatabase1_properties_typeProperties_database')]"
+					},
+					"AzureSqlDatabase1_properties_typeProperties_userName": {
+						"value": "[parameters('AzureSqlDatabase1_properties_typeProperties_userName')]"
+					},
+					"AzureSqlDatabase2_properties_typeProperties_server": {
+						"value": "[parameters('AzureSqlDatabase2_properties_typeProperties_server')]"
+					},
+					"AzureSqlDatabase2_properties_typeProperties_database": {
+						"value": "[parameters('AzureSqlDatabase2_properties_typeProperties_database')]"
+					},
+					"AzureSqlDatabase2_properties_typeProperties_userName": {
+						"value": "[parameters('AzureSqlDatabase2_properties_typeProperties_userName')]"
+					},
+					"AzureSqlDatabase3_properties_typeProperties_server": {
+						"value": "[parameters('AzureSqlDatabase3_properties_typeProperties_server')]"
+					},
+					"AzureSqlDatabase3_properties_typeProperties_database": {
+						"value": "[parameters('AzureSqlDatabase3_properties_typeProperties_database')]"
+					},
+					"AzureSqlDatabase3_properties_typeProperties_userName": {
+						"value": "[parameters('AzureSqlDatabase3_properties_typeProperties_userName')]"
+					},
+					"AzureSqlDatabase4_properties_typeProperties_server": {
+						"value": "[parameters('AzureSqlDatabase4_properties_typeProperties_server')]"
+					},
+					"AzureSqlDatabase4_properties_typeProperties_database": {
+						"value": "[parameters('AzureSqlDatabase4_properties_typeProperties_database')]"
+					},
+					"AzureSqlDatabase4_properties_typeProperties_userName": {
+						"value": "[parameters('AzureSqlDatabase4_properties_typeProperties_userName')]"
+					}
+				}
+			},
+			"dependsOn": [
+				"[resourceId('Microsoft.Resources/deployments', 'amaras_ArmTemplate_0')]"
+			]
+		},
+		{
+			"name": "amaras_ArmTemplate_2",
+			"type": "Microsoft.Resources/deployments",
+			"apiVersion": "2024-03-01",
+			"properties": {
+				"mode": "incremental",
+				"templateLink": {
+					"uri": "[concat(parameters('containerUri'), '/ArmTemplate_2.json', parameters('containerSasToken'))]",
+					"contentVersion": "1.0.0.0"
+				},
+				"parameters": {
+					"factoryName": {
+						"value": "[parameters('factoryName')]"
+					},
+					"AzureSqlDatabase5_password": {
+						"value": "[parameters('AzureSqlDatabase5_password')]"
+					},
+					"AzureSqlDatabase6_password": {
+						"value": "[parameters('AzureSqlDatabase6_password')]"
+					},
+					"AzureSqlDatabase7_password": {
+						"value": "[parameters('AzureSqlDatabase7_password')]"
+					},
+					"AzureSqlDatabase8_password": {
+						"value": "[parameters('AzureSqlDatabase8_password')]"
+					},
+					"AzureSqlDatabase9_password": {
+						"value": "[parameters('AzureSqlDatabase9_password')]"
+					},
+					"databricks_notebook_connection_accessToken": {
+						"value": "[parameters('databricks_notebook_connection_accessToken')]"
+					},
+					"notebbok connection2_accessToken": {
+						"value": "[parameters('notebbok connection2_accessToken')]"
+					},
+					"notebook_connection1_accessToken": {
+						"value": "[parameters('notebook_connection1_accessToken')]"
+					},
+					"notebook_connection2_accessToken": {
+						"value": "[parameters('notebook_connection2_accessToken')]"
+					},
+					"AzureSqlDatabase5_properties_typeProperties_server": {
+						"value": "[parameters('AzureSqlDatabase5_properties_typeProperties_server')]"
+					},
+					"AzureSqlDatabase5_properties_typeProperties_database": {
+						"value": "[parameters('AzureSqlDatabase5_properties_typeProperties_database')]"
+					},
+					"AzureSqlDatabase5_properties_typeProperties_userName": {
+						"value": "[parameters('AzureSqlDatabase5_properties_typeProperties_userName')]"
+					},
+					"AzureSqlDatabase6_properties_typeProperties_server": {
+						"value": "[parameters('AzureSqlDatabase6_properties_typeProperties_server')]"
+					},
+					"AzureSqlDatabase6_properties_typeProperties_database": {
+						"value": "[parameters('AzureSqlDatabase6_properties_typeProperties_database')]"
+					},
+					"AzureSqlDatabase6_properties_typeProperties_userName": {
+						"value": "[parameters('AzureSqlDatabase6_properties_typeProperties_userName')]"
+					},
+					"AzureSqlDatabase7_properties_typeProperties_server": {
+						"value": "[parameters('AzureSqlDatabase7_properties_typeProperties_server')]"
+					},
+					"AzureSqlDatabase7_properties_typeProperties_database": {
+						"value": "[parameters('AzureSqlDatabase7_properties_typeProperties_database')]"
+					},
+					"AzureSqlDatabase7_properties_typeProperties_userName": {
+						"value": "[parameters('AzureSqlDatabase7_properties_typeProperties_userName')]"
+					},
+					"AzureSqlDatabase8_properties_typeProperties_server": {
+						"value": "[parameters('AzureSqlDatabase8_properties_typeProperties_server')]"
+					},
+					"AzureSqlDatabase8_properties_typeProperties_database": {
+						"value": "[parameters('AzureSqlDatabase8_properties_typeProperties_database')]"
+					},
+					"AzureSqlDatabase8_properties_typeProperties_userName": {
+						"value": "[parameters('AzureSqlDatabase8_properties_typeProperties_userName')]"
+					},
+					"AzureSqlDatabase9_properties_typeProperties_server": {
+						"value": "[parameters('AzureSqlDatabase9_properties_typeProperties_server')]"
+					},
+					"AzureSqlDatabase9_properties_typeProperties_database": {
+						"value": "[parameters('AzureSqlDatabase9_properties_typeProperties_database')]"
+					},
+					"AzureSqlDatabase9_properties_typeProperties_userName": {
+						"value": "[parameters('AzureSqlDatabase9_properties_typeProperties_userName')]"
+					},
+					"databricks_notebook_connection_properties_typeProperties_existingClusterId": {
+						"value": "[parameters('databricks_notebook_connection_properties_typeProperties_existingClusterId')]"
+					},
+					"notebbok connection2_properties_typeProperties_existingClusterId": {
+						"value": "[parameters('notebbok connection2_properties_typeProperties_existingClusterId')]"
+					},
+					"notebook_connection1_properties_typeProperties_existingClusterId": {
+						"value": "[parameters('notebook_connection1_properties_typeProperties_existingClusterId')]"
+					},
+					"notebook_connection2_properties_typeProperties_existingClusterId": {
+						"value": "[parameters('notebook_connection2_properties_typeProperties_existingClusterId')]"
+					}
+				}
+			},
+			"dependsOn": [
+				"[resourceId('Microsoft.Resources/deployments', 'amaras_ArmTemplate_1')]"
+			]
+		}
+	]
+}
